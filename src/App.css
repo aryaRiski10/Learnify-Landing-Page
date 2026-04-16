@@ -714,3 +714,146 @@ footer {
     font-size: 0.85rem;
     color: #5C5C72;
 }
+
+@media (width < 768px) {
+    /* Hero Section */
+    .hero {
+        grid-template-columns: auto;
+        padding: 1.5rem;
+        overflow: hidden;
+    }
+    .hero h1 {
+        line-height: 150%;
+    }
+    /* Logos Section */
+    .logos {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .logos h3 {
+        font-size: 14px
+    }
+    .logo-slider {
+        overflow: hidden;
+        width: 100%;
+    }
+    .logo-track {
+        display: flex;
+        gap: 2rem;
+        width: max-content;
+        animation: scroll 20s linear infinite;
+    }
+    .logo-chip {
+        white-space: nowrap;
+        padding: 8px 16px;
+        border-radius: 999px;
+    }
+    /* animasi jalan */
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+    /* Benefit Section */
+    .benefit {
+        padding: 3rem 1.5rem;
+    }
+    .section-title {
+        line-height: 150%;
+        font-size: 1.6rem;
+    }
+    .benefit .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .benefit .feature-card {
+        padding: 1rem;
+    }
+    .benefit .feature-card h3 {
+        font-size: 0.8rem;
+    }
+    .benefit .feature-card p {
+        font-size: 0.75rem;
+    }
+    /* Course Section */
+    .courses-inner {
+        padding: 3rem 1.5rem
+    }
+    .courses-grid {
+        grid-template-columns: auto;
+    }
+    .course-footer {
+        margin-top: 20px;
+    }
+    .stars {
+        display: flex;
+        gap: 8px;
+    }
+    /* Testimonial Section */
+    .testimonials {
+        padding: 3rem 1.5rem;
+        overflow-x: clip;
+        overflow-y: visible;
+    }
+    .section-sub {
+        margin-bottom: 1.5rem!important;
+    }
+    .testi-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: visible;
+        gap: 1rem;
+        padding: 0.25rem 1.5rem 0.75rem;
+        margin-inline: -1.5rem;
+        margin-left: 0;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        /* smooth scroll iOS */
+    }
+    .testi-card {
+        flex: 0 0 80%;
+        max-width: 280px;
+        scroll-snap-align: start;
+    }
+    /* CTA Section */
+    .cta-wrap {
+        padding: 3rem 1.5rem;
+    }
+    .cta-section {
+        padding: 2rem;
+    }
+    .cta-section h2 {
+        font-size: 1.5rem;
+        line-height: 150%;
+    }
+    .cta-section p {
+        font-size: 0.75rem;
+    }
+    .cta-btn1,
+    .cta-btn2 {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.8rem;
+    }
+    /*Footer Section */
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1.5rem 1rem;
+        gap: 8px;
+    }
+    footer div:first-child {
+        order: 3;
+        margin-top: 20px;
+    }
+    footer div:last-child {
+        order: 1;
+    }
+    footer span {
+        color: var(--text);
+    }
+}

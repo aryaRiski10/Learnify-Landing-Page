@@ -46,6 +46,6 @@ export default function Testimonial() {
             <div className="testi-grid grid grid-cols-3 gap-6">
                 {listTestimonials}
             </div>
-        </section>
+        </section >
     )
 }
